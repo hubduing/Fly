@@ -1,0 +1,24 @@
+.info {
+    background: var(--SecondaryColor);
+
+    .infoContainer {
+        .titleDiv {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cardsDiv {
+            margin-top: 3rem;
+            gap: 1.5rem;
+            .singleCard {
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

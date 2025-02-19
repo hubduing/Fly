@@ -1,0 +1,7 @@
+.search .searchInputs {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}/*# sourceMappingURL=Search.module.css.map */
