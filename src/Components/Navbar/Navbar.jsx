@@ -62,7 +62,7 @@ const Navbar = () => {
           <img src={logo} alt="Company Logo" className={styles.logo} />
         </div>
 
-        <div className={styles.active}>
+        <div className={active}>
           <ul className={`${styles.menu} flex`}>
             <li onClick={removeNavBar} className={styles.listItem}>
               Home
@@ -79,19 +79,21 @@ const Navbar = () => {
             <li onClick={removeNavBar} className={styles.listItem}>
               Destination
             </li>
+            <li>
+              <button className={`${styles.btnTwo} btn flex`}>Contact</button>
+            </li>
           </ul>
-
           <button
             onClick={removeNavBar}
             className={`${styles.btnOne} btn flex`}
           >
-            Contact Us
+            Contact
           </button>
         </div>
         <div className={styles.toggleIcon} onClick={showNavBar}>
           <CgMenuGridO className="icon" />
         </div>
-        <button className={`${styles.btnTwo} btn flex`}>Get in Touch</button>
+        {/* <button className={`${styles.btnTwo} btn flex`}>Get in Touch</button> */}
       </div>
     </nav>
   );

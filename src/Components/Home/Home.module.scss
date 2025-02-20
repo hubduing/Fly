@@ -78,7 +78,6 @@
   }
 }
 
-
 @media screen and (min-width: 960px) {
   .home {
     padding-top: 13px;
@@ -89,6 +88,24 @@
       line-height: 4rem;
       padding-top: 8rem;
     }
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .home {
+    .homeImages {
+      width: 60%;
+      .videoDiv {
+        width: 90%;
+        height: 300px;
+
+        .video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 15rem;
+        }
+      }
+    }
   }
 }
