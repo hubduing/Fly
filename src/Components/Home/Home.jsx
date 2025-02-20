@@ -7,7 +7,7 @@ import aeroplane from "../../assets/aeroplane.png";
 const Home = () => {
   return (
     <div className={`${styles.home} flex container`}>
-      <div className="mainText">
+      <div className={styles.mainText}>
         <h1>Create memories</h1>
       </div>
 

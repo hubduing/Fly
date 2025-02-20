@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Lounge.module.css";
 
-import imagesGrid2 from "../../assets/images-grid2.png";
+import imagesGrid2 from "../../assets/images-grid2.jpg";
 
 const Lounge = () => {
   return (

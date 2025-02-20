@@ -17,4 +17,10 @@
   padding-bottom: 0.5rem;
   font-weight: 500;
   color: var(--blackColor);
+}
+
+@media screen and (min-width: 570px) {
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Lounge.module.css.map */

@@ -89,4 +89,10 @@
 .travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
   bottom: 110px;
   transition: 1s ease-in-out;
+}
+
+@media screen and (min-width: 480px) {
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Travelers.module.css.map */

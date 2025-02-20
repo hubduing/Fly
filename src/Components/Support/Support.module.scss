@@ -44,3 +44,12 @@
         }
     }
 }
+
+@media screen and (min-width: 570px) {
+    .support {
+        .infoDiv {
+            margin-top: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

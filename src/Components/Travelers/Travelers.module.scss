@@ -102,3 +102,15 @@
         }
     }
 }
+
+
+@media screen and (min-width: 480px) {
+    .travelers {
+        .sectionContainer {
+            .travelersContainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+

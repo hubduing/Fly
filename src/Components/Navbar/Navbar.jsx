@@ -33,7 +33,7 @@ const Navbar = () => {
   window.addEventListener("scroll", addBgColor);
 
   return (
-    <div className={`${styles.navBar} flex`}>
+    <nav className={`${styles.navBar} flex`}>
       <div className={`${styles.navBarOne} flex`}>
         <div>
           <SiConsul />
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
         <button className={`${styles.btnTwo} btn flex`}>Get in Touch</button>
       </div>
-    </div>
+    </nav>
   );
 };
 

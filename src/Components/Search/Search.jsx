@@ -9,7 +9,7 @@ const Search = () => {
   return (
     <section className={`${styles.search} container section`}>
       <div className="sectionContainer grid">
-        <div className="btns flex">
+        <div className={`btns flex ${styles.btns}`}>
           <div className="singleBtn active">
             <span>Economy</span>
           </div>

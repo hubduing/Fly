@@ -44,4 +44,20 @@
 }
 .info .cardsDiv .singleCard .colorTwo {
   background: var(--colorTwo);
+}
+
+@media screen and (min-width: 570px) {
+  .info .infoContainer .titleDiv {
+    justify-self: center;
+  }
+  .info .infoContainer .titleDiv {
+    flex-direction: row;
+  }
+  .info .infoContainer .titleDiv h2 {
+    text-align: left;
+    max-width: 500px;
+  }
+  .info .infoContainer .cardsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Info.module.css.map */

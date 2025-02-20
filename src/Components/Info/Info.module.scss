@@ -51,3 +51,24 @@
         }
     }
 }
+
+@media screen and (min-width: 570px) {
+    .info {
+        .infoContainer {
+            .titleDiv {
+                justify-self: center;
+            }
+            .titleDiv {
+                flex-direction: row;
+                h2 {
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cardsDiv {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}

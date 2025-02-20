@@ -1,0 +1,58 @@
+.subscribe {
+  background: var(--SecondaryColor);
+
+  .sectionContainer {
+    text-align: center;
+
+    .inputDiv {
+      margin-top: 1rem;
+      flex-direction: column;
+      background: var(--whiteColor);
+      border-radius: 1rem;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1rem 0.5rem;
+
+        &::placeholder {
+          font-size: 13px;
+          opacity: 0.5;
+        }
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe {
+    .sectionContainer {
+      max-width: 80%;
+      margin: auto;
+
+      .inputDiv {
+        flex-direction: row;
+        padding: 0 0.5rem;
+        border-radius: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .subscribe {
+    .sectionContainer {
+      .inputDiv {
+        justify-content: space-between;
+
+        .btn {
+          max-width: max-content;
+        }
+      }
+    }
+  }
+}
