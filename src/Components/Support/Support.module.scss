@@ -1,3 +1,74 @@
+// .support {
+//     .sectionContainer {
+//         .titlesDiv {
+//             text-align: center;
+//             small {
+//                 letter-spacing: 0.8rem;
+//                 text-transform: uppercase;
+//                 font-style: 13px;
+//                 color: var(--blackColor);
+//                 line-height: 1.5rem;
+//             }
+//         }
+//         .infoDiv {
+//             margin-top: 2rem;
+//             gap: 1.5rem;
+//             .textDiv {
+//                 gap: 1.5rem;
+//             }
+
+//             .singleInfo {
+//                 .number {
+//                     background: var(--PrimaryColor);
+//                     padding: 5px 12px;
+//                     width: 40px;
+//                     border-radius: 3rem;
+//                     font-style: 13px;
+//                     font-weight: 700;
+//                     color: var(--whiteColor);
+//                 }
+//                 .colorOne {
+//                     background: var(--colorOne);
+//                 }
+//                 .colorTwo {
+//                     background: var(--colorTwo);
+//                 }
+//             }
+//         }
+//         .imgDiv {
+//             margin: auto;
+//             img {
+//                 width: 100%;
+//                 max-width: 420px;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 570px) {
+//     .support {
+//         .infoDiv {
+//             margin-top: 2rem;
+//             grid-template-columns: repeat(2, 1fr);
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .support {
+//         .infoDiv {
+//             grid-template-columns: repeat(1, 1fr);
+//             gap: 2rem;
+//             margin-top: 5rem;
+
+//             .textDiv {
+//                 margin-top: 0;
+//                 grid-template-columns: repeat(2, 1fr);
+//             }
+//         }
+//     }
+// }
+
 .support {
     .sectionContainer {
         .titlesDiv {
@@ -10,9 +81,13 @@
                 line-height: 1.5rem;
             }
         }
+
         .infoDiv {
             margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
+
             .textDiv {
                 gap: 1.5rem;
             }
@@ -27,29 +102,26 @@
                     font-weight: 700;
                     color: var(--whiteColor);
                 }
+
                 .colorOne {
                     background: var(--colorOne);
                 }
+
                 .colorTwo {
                     background: var(--colorTwo);
                 }
             }
         }
+
         .imgDiv {
             margin: auto;
+            display: grid;
+            justify-content: center;
+
             img {
                 width: 100%;
                 max-width: 420px;
             }
-        }
-    }
-}
-
-@media screen and (min-width: 570px) {
-    .support {
-        .infoDiv {
-            margin-top: 2rem;
-            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

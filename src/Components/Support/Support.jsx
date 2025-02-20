@@ -44,10 +44,11 @@ const Support = () => {
             </p>
           </div>
         </div>
-
+        
         <div className={styles.imgDiv}>
           <img src={imageGrid} alt="" />
         </div>
+
       </div>
     </section>
   );

@@ -54,6 +54,10 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
+.showNavBar {
+  padding: 0 5rem;
+}
+
 @media screen and (max-width: 768px) {
   .navBarMenu {
     position: absolute;
@@ -92,5 +96,54 @@
   }
   .btnTwo {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navBar {
+    align-items: center;
+  }
+  .navBar .navBarOne .none {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .navBar .navBarOne .none li {
+    font-size: 13px;
+    gap: 0.5rem;
+    color: var(--textColor);
+  }
+  .navBar .navBarOne .none li:hover {
+    color: var(--PrimaryColor);
+    text-decoration: underline;
+  }
+  .navBar .navBarTwo {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBar .navBarTwo .logoDiv .logo {
+    max-width: 20%;
+  }
+  .navBar .navBarTwo .menu {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .navBar .navBarTwo .menu .listItem {
+    padding: 0 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--textColor);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .menu .listItem:hover {
+    font-weight: 700;
+    color: var(--PrimaryColor);
+  }
+  .navBar .navBarTwo .btnOne,
+  .navBar .navBarTwo .toggleIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navBar .navBarOne, .navBar .navBarTwo {
+    padding: 1.5rem 5rem;
   }
 }/*# sourceMappingURL=Navbar.module.css.map */

@@ -39,7 +39,7 @@ const Navbar = () => {
           <SiConsul />
         </div>
 
-        <ul className="none flex">
+        <ul className={`none ${styles.none} flex`}>
           <li className="flex">
             <BsPhoneVibrate />
             Support
@@ -56,13 +56,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className={nobg}>
-      {/* <div className={`${styles.navBarTwo}`}> */}
+        {/* <div className={`${styles.navBarTwo}`}> */}
         {/* <div className={`${styles.navBarTwo} flex`}> */}
         <div className={styles.logoDiv}>
           <img src={logo} alt="Company Logo" className={styles.logo} />
         </div>
 
-        <div className={active}>
+        <div className={styles.active}>
           <ul className={`${styles.menu} flex`}>
             <li onClick={removeNavBar} className={styles.listItem}>
               Home
@@ -88,7 +88,7 @@ const Navbar = () => {
             Contact Us
           </button>
         </div>
-        <div className="toggleIcon" onClick={showNavBar}>
+        <div className={styles.toggleIcon} onClick={showNavBar}>
           <CgMenuGridO className="icon" />
         </div>
         <button className={`${styles.btnTwo} btn flex`}>Get in Touch</button>

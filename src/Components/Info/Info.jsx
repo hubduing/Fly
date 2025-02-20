@@ -7,7 +7,7 @@ const Info = () => {
   return (
     <section className={`${styles.info} section`}>
       <div className={`${styles.infoContainer} container`}>
-        <div className={`${styles.titleDiv} flex`}>
+        <div className={`${styles.titleDiv} grid`}>
           <button className="btn">View All</button>
         </div>
 

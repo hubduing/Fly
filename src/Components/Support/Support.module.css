@@ -10,6 +10,8 @@
 }
 .support .sectionContainer .infoDiv {
   margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 .support .sectionContainer .infoDiv .textDiv {
@@ -32,15 +34,10 @@
 }
 .support .sectionContainer .imgDiv {
   margin: auto;
+  display: grid;
+  justify-content: center;
 }
 .support .sectionContainer .imgDiv img {
   width: 100%;
   max-width: 420px;
-}
-
-@media screen and (min-width: 570px) {
-  .support .infoDiv {
-    margin-top: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }/*# sourceMappingURL=Support.module.css.map */

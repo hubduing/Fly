@@ -1,9 +1,12 @@
+@charset "UTF-8";
 .travelers .sectionContainer {
   text-align: center;
 }
 .travelers .sectionContainer .travelersContainer {
   margin-top: 1rem;
   gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматически подстраиваем количество колонок */
 }
 .travelers .sectionContainer .travelersContainer .singleTraveler {
   position: relative;
@@ -42,14 +45,14 @@
 }
 @keyframes animated {
   0% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
   50% {
-    transform: translateY(-30px);
-    scale: 2;
+    transform: translateY(-20px);
+    scale: 1.3;
   }
   100% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 .travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
@@ -89,10 +92,4 @@
 .travelers .sectionContainer .travelersContainer .singleTraveler:hover .travelerImage {
   bottom: 110px;
   transition: 1s ease-in-out;
-}
-
-@media screen and (min-width: 480px) {
-  .travelers .sectionContainer .travelersContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }/*# sourceMappingURL=Travelers.module.css.map */

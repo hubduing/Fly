@@ -23,4 +23,12 @@
   .lounge .sectionContainer .textDiv .grids {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media screen and (min-width: 768px) {
+  .lounge .sectionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lounge .sectionContainer .textDiv {
+    grid-area: 1;
+  }
 }/*# sourceMappingURL=Lounge.module.css.map */

@@ -74,4 +74,9 @@
     padding-top: 2rem;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media screen and (min-width: 680px) {
+  .footer .footerContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

@@ -64,9 +64,14 @@
   .navBarBg {
     background: var(--SecondaryColor);
     padding: 0.5rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
+}
+
+.showNavBar {
+    padding: 0 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -81,7 +86,8 @@
     width: 80%;
     transform: translateX(50%);
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border: 3px solid white;
     transition: 0.5s ease-in-out;
@@ -113,5 +119,71 @@
 
   .btnTwo {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navBar {
+    align-items: center;
+    .navBarOne {
+      .none {
+        display: flex;
+        gap: 1.5rem;
+
+        li {
+          font-size: 13px;
+          gap: 0.5rem;
+          color: var(--textColor);
+
+          &:hover {
+            color: var(--PrimaryColor);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .navBarTwo {
+      justify-content: space-between;
+      align-items: center;
+
+      .logoDiv {
+        .logo {
+          max-width: 20%;
+        }
+      }
+
+      .menu {
+        flex-direction: row;
+        gap: 0.5rem;
+
+        .listItem {
+          padding: 0 0.5rem;
+          font-size: 14px;
+          cursor: pointer;
+          color: var(--textColor);
+          font-weight: 700;
+
+          &:hover {
+            font-weight: 700;
+            color: var(--PrimaryColor);
+          }
+        }
+      }
+
+      .btnOne,
+      .toggleIcon {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .navBar {
+    .navBarOne, .navBarTwo {
+      padding: 1.5rem 5rem;
+    }
   }
 }

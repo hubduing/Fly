@@ -5,6 +5,8 @@
         .travelersContainer {
             margin-top: 1rem;
             gap: 1.5rem;
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматически подстраиваем количество колонок */
 
             .singleTraveler {
                 position: relative;
@@ -41,16 +43,17 @@
                     transition: var(--transition);
                     animation: animated 2.3s infinite;
                 }
+
                 @keyframes animated {
                     0% {
-                        transform: translateY(-15px);
+                        transform: translateY(-10px);
                     }
                     50% {
-                        transform: translateY(-30px);
-                        scale: 2;
+                        transform: translateY(-20px);
+                        scale: 1.3;
                     }
                     100% {
-                        transform: translateY(-15px);
+                        transform: translateY(-10px);
                     }
                 }
 
@@ -95,22 +98,10 @@
 
                     .travelerImage {
                         bottom: 110px;
-                        transition:  1s ease-in-out;
+                        transition: 1s ease-in-out;
                     }
                 }
             }
         }
     }
 }
-
-
-@media screen and (min-width: 480px) {
-    .travelers {
-        .sectionContainer {
-            .travelersContainer {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    }
-}
-

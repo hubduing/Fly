@@ -71,10 +71,8 @@
         gap: 1rem;
         bottom: 1px solid var(--greyText);
         text-align: center;
-
     }
 }
-
 
 @media screen and (min-width: 480px) {
     .footer {
@@ -85,7 +83,7 @@
                 justify-content: center;
             }
         }
-    }    
+    }
 }
 
 @media screen and (min-width: 570px) {
@@ -94,5 +92,14 @@
             padding-top: 2rem;
             grid-template-columns: repeat(3, 1fr);
         }
-    }    
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .footer {
+        .footerContainer {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
 }

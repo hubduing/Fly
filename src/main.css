@@ -182,4 +182,25 @@ h2 {
 .text input::placeholder {
   font-style: 12px;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    color: var(--greyText);
+    line-height: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
