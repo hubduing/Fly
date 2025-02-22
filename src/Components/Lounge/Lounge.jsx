@@ -1,3 +1,60 @@
+// import React from "react";
+// import styles from "./Lounge.module.css";
+
+// import imagesGrid2 from "../../assets/images-grid2.jpg";
+
+// const Lounge = () => {
+//   return (
+//     <section className={`${styles.lounge} container section`}>
+//       <div className={`${styles.sectionContainer} grid`}>
+//         <div className="imgDiv">
+//           <img src={imagesGrid2} alt="" />
+//         </div>
+
+//         <div className={styles.textDiv}>
+//           <h2>Unaccompanied Minor Lounge</h2>
+//           <div className={`${styles.grids} grid`}>
+//             <div className={styles.singleGrid}>
+//               <span className={styles.gridTitle}>Help through the airpot</span>
+//               <p>
+//                 You can also call airlines from your phone and book a flight
+//                 ticket to one of your favorite destinations.
+//               </p>
+//             </div>
+
+//             <div className={styles.singleGrid}>
+//               <span className={styles.gridTitle}>Priority Boarding</span>
+//               <p>
+//                 You can also call airlines from your phone and book a flight
+//                 ticket to one of your favorite destinations.
+//               </p>
+//             </div>
+
+//             <div className={styles.singleGrid}>
+//               <span className={styles.gridTitle}>Care on the flight</span>
+//               <p>
+//                 You can also call airlines from your phone and book a flight
+//                 ticket to one of your favorite destinations.
+//               </p>
+//             </div>
+
+//             <div className={styles.singleGrid}>
+//               <span className={styles.gridTitle}>Chauffeur-drive services</span>
+//               <p>
+//                 You can also call airlines from your phone and book a flight
+//                 ticket to one of your favorite destinations.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Lounge;
+
+
 import React from "react";
 import styles from "./Lounge.module.css";
 
@@ -8,41 +65,41 @@ const Lounge = () => {
     <section className={`${styles.lounge} container section`}>
       <div className={`${styles.sectionContainer} grid`}>
         <div className="imgDiv">
-          <img src={imagesGrid2} alt="" />
+          <img src={imagesGrid2} alt="Зона ожидания" />
         </div>
 
         <div className={styles.textDiv}>
-          <h2>Unaccompanied Minor Lounge</h2>
+          <h2>Лаунж для несовершеннолетних без сопровождения</h2>
           <div className={`${styles.grids} grid`}>
             <div className={styles.singleGrid}>
-              <span className={styles.gridTitle}>Help through the airpot</span>
+              <span className={styles.gridTitle}>Помощь в аэропорту</span>
               <p>
-                You can also call airlines from your phone and book a flight
-                ticket to one of your favorite destinations.
+                Вы также можете позвонить в авиакомпании со своего телефона и
+                забронировать билет на один из ваших любимых маршрутов.
               </p>
             </div>
 
             <div className={styles.singleGrid}>
-              <span className={styles.gridTitle}>Priority Boarding</span>
+              <span className={styles.gridTitle}>Приоритетная посадка</span>
               <p>
-                You can also call airlines from your phone and book a flight
-                ticket to one of your favorite destinations.
+                Вы также можете позвонить в авиакомпании со своего телефона и
+                забронировать билет на один из ваших любимых маршрутов.
               </p>
             </div>
 
             <div className={styles.singleGrid}>
-              <span className={styles.gridTitle}>Care on the flight</span>
+              <span className={styles.gridTitle}>Забота во время полета</span>
               <p>
-                You can also call airlines from your phone and book a flight
-                ticket to one of your favorite destinations.
+                Вы также можете позвонить в авиакомпании со своего телефона и
+                забронировать билет на один из ваших любимых маршрутов.
               </p>
             </div>
 
             <div className={styles.singleGrid}>
-              <span className={styles.gridTitle}>Chauffeur-drive services</span>
+              <span className={styles.gridTitle}>Услуги водителя</span>
               <p>
-                You can also call airlines from your phone and book a flight
-                ticket to one of your favorite destinations.
+                Вы также можете позвонить в авиакомпании со своего телефона и
+                забронировать билет на один из ваших любимых маршрутов.
               </p>
             </div>
           </div>
